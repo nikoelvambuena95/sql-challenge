@@ -1,17 +1,29 @@
 --List Sales department employees: employee no., last name, first name, department name
-SELECT * FROM departments
+--Find Sales department no. from 'departments' table
+SELECT d.dept_no AS department_number, d.dept_name AS department_name
+FROM departments AS d
+WHERE dept_name = 'Sales'
 ;
+--Sales department no. = 'd007'
 
-SELECT * FROM employees
-;
-
-SELECT * FROM dept_emp
-;
-
-SELECT * FROM dept_manager
-;
-
-SELECT  FROM dept_emp
-	INNER JOIN dept_manager
-		USING(dept_no)
+--Final query
+SELECT E.emp_no AS employee_number, E.last_name, E.first_name
+, D.dept_name AS department_name
+	FROM employees AS E
+	INNER JOIN
+	--Use 'UNION' operator to combine 'dept_emp' and 'dept_manager' tables
+	(
+		SELECT DE.emp_no, DE.dept_no
+			FROM dept_emp AS DE
+				WHERE dept_no = 'd007'
+		UNION
+		SELECT DM.emp_no, DM.dept_no 
+			FROM dept_manager AS DM
+				WHERE dept_no = 'd007'
+		) UD
+		USING(emp_no)
+		LEFT JOIN departments AS D
+			USING(dept_no)
+				WHERE dept_no = 'd007'
+	ORDER BY last_name, first_name
 ;
