@@ -31,14 +31,15 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
  An example SQL query below:
  <br>
  
- 	--List Sales and Development department employees: employee no., last name, first name, department name
+ 	-- List Sales and Development department employees: employee no., last name, first name, department name
 	
+	-- Sales department no. = 'd007' , Development department no. = 'd005'
  	SELECT E.emp_no AS employee_number, E.last_name, E.first_name
 	, D.dept_name AS department_name
 	FROM employees AS E
 	INNER JOIN
 	
-	--Use 'UNION' operator to combine 'dept_emp' and 'dept_manager' tables
+	-- Use 'UNION' operator to combine 'dept_emp' and 'dept_manager' tables
 	(
 		SELECT DE.emp_no, DE.dept_no
 			FROM dept_emp AS DE
