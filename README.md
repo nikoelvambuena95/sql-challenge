@@ -2,7 +2,6 @@
 This challenge has two components:
 1. Creating a <b>Postgres database</b>
 2. Querying the database using <b>SQL</b> (<b>S</b>tructured <b>Q</b>uery <b>L</b>anguage)
-<br>
 
 ### 1. Creating a Postgres database
 
@@ -19,8 +18,6 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
 <img src="EmployeeSQL/ERD_image.png"
      alt="Entity Relation Diagram"
      style="float: left; margin-right: 10px;" />
- <br>
- 
  
  ### 2. Querying the database using SQL
  
