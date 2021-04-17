@@ -3,7 +3,6 @@ This challenge has two components:
 1. Creating a <b>Postgres database</b>
 2. Querying the database using <b>SQL</b> (<b>S</b>tructured <b>Q</b>uery <b>L</b>anguage)
 <br>
-<br>
 ### 1. Creating a Postgres database
 <br>
 6 CSV files were provided containing a company's employee information. The information includes:
@@ -25,9 +24,9 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
  <br>
  <br>
  An example SQL query below:
- ```
- SELECT E.emp_no AS employee_number, E.last_name, E.first_name
-, D.dept_name AS department_name
+ 
+ 	SELECT E.emp_no AS employee_number, E.last_name, E.first_name
+	, D.dept_name AS department_name
 	FROM employees AS E
 	INNER JOIN
 	--Use 'UNION' operator to combine 'dept_emp' and 'dept_manager' tables
@@ -48,8 +47,7 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
 				WHERE dept_no 
 				IN ('d007', 'd005')
 	ORDER BY last_name, first_name
-;
-```
+	;
 
 <br>
 <br>
