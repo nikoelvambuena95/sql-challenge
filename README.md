@@ -3,7 +3,9 @@ This challenge has two components:
 1. Creating a <b>Postgres database</b>
 2. Querying the database using <b>SQL</b> (<b>S</b>tructured <b>Q</b>uery <b>L</b>anguage)
 <br>
+
 ### 1. Creating a Postgres database
+
 <br>
 6 CSV files were provided containing a company's employee information. The information includes:
 - Employee Number
@@ -17,8 +19,10 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
      alt="Entity Relation Diagram"
      style="float: left; margin-right: 10px;" />
  <br>
- <br>
+ 
+ 
  ### 2. Querying the database using SQL
+ 
  <br>
  With the Postgres database created, I queried for various information.
  <br>
