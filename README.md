@@ -14,6 +14,7 @@ This challenge has two components:
 - Department Manager
 - Salary
 <br>
+<br>
 Using pgAdmin 4 as the management tool, I created six tables in the database that correspond to the six CSV files. A schema was created using an <b>ERD</b> (<b>E</b>ntity <b>R</b>elation <b>D</b>iagram) in order to create proper relationships between database tables.
 <img src="EmployeeSQL/ERD_image.png"
      alt="Entity Relation Diagram"
@@ -28,6 +29,7 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
  <br>
  <br>
  An example SQL query below:
+ <br>
  
  	SELECT E.emp_no AS employee_number, E.last_name, E.first_name
 	, D.dept_name AS department_name
@@ -53,7 +55,6 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
 	ORDER BY last_name, first_name
 	;
 
-<br>
 <br>
 Each SQL query is saved as an SQL file.
 <br>
