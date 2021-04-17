@@ -17,7 +17,6 @@ The information includes:
 - Salary
 
 <br>
-<br>
 Using pgAdmin 4 as the management tool, I created six tables in the database that correspond to the six CSV files. A schema was created using an <b>ERD</b> (<b>E</b>ntity <b>R</b>elation <b>D</b>iagram) in order to create proper relationships between database tables.
 <img src="EmployeeSQL/ERD_image.png"
      alt="Entity Relation Diagram"
