@@ -6,12 +6,16 @@ This challenge has two components:
 ### 1. Creating a Postgres database
 
 <br>
-6 CSV files were provided containing a company's employee information. The information includes:
+6 CSV files were provided containing a company's employee information.
+<br>
+The information includes:
+
 - Employee Number
 - Department Number
 - Job Title
 - Department Manager
 - Salary
+
 <br>
 <br>
 Using pgAdmin 4 as the management tool, I created six tables in the database that correspond to the six CSV files. A schema was created using an <b>ERD</b> (<b>E</b>ntity <b>R</b>elation <b>D</b>iagram) in order to create proper relationships between database tables.
