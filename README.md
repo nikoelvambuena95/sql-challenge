@@ -31,6 +31,7 @@ Using pgAdmin 4 as the management tool, I created six tables in the database tha
  An example SQL query below:
  <br>
  
+ 	--List Sales and Development department employees: employee no., last name, first name, department name
  	SELECT E.emp_no AS employee_number, E.last_name, E.first_name
 	, D.dept_name AS department_name
 	FROM employees AS E
