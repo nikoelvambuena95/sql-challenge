@@ -5,4 +5,3 @@ SELECT E.first_name, E.last_name, E.sex
 		AND last_name LIKE 'B%'
 	ORDER BY last_name ASC
 ;
-	
